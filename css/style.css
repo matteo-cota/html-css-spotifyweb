@@ -1,0 +1,80 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    width: 1200;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo img {
+    width: 150px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 35px;
+}
+
+.sidebar nav ul li a img:active {
+    margin-right: 10px;
+    color: greenyellow;
+}
+
+.sidebar .playlist h2,
+.sidebar .install-app a,
+.sidebar .profile a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .playlist ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    display: block;
+    margin: 10px 0;
+}
+
+.install {
+    width: 23px;
+}
+
+.profile {
+    width: 23px;
+}
+
+.playlist {
+    margin-bottom: 116px;
+}
