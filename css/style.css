@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 0;
+    top: 29px;
     right: 0;
     left: 0;
     z-index: 1030;
@@ -61,15 +61,20 @@ h2 {
 .sidebar .profile a {
     color: #fff;
     text-decoration: none;
-    margin: 0 0;
+    margin: -6px 0;
     display: flex;
     align-items: center;
+}
+
+.hr {
+    width: 160px;
 }
 
 .sidebar .playlist ul {
     list-style: none;
     padding: 0;
     font-size: 0.8em;
+    margin: -16px 0;
 }
 
 .sidebar .playlist ul li a {
@@ -104,7 +109,7 @@ main {
 }
 
 .main-header {
-    width: 100%;
+    width: 106%;
     margin: 20px;
     height: 27px;
     padding: 29px;
@@ -196,4 +201,102 @@ section h2 {
 
 .circular {
     border-radius: 100px;
+}
+
+/* Now playing bar */
+.now-playing {
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    height: 65px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.now-playing .track-info {
+    display: flex;
+    align-items: center;
+}
+
+.now-playing .track-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.now-playing .track-info button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.now-playing .track-info .like-btn img,
+.now-playing .track-info .add-to-playlist-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.now-playing .player-controls .progress-bar {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.now-playing .player-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.now-playing .player-controls button img {
+    width: 20px;
+    height: 20px;
+}
+
+.now-playing .progress-bar input {
+    width: 465px;
+    margin: 0 10px;
+}
+
+.now-playing .progress-bar .current-time,
+.now-playing .progress-bar .total-time {
+    font-size: 12px;
+}
+
+.now-playing .additional-controls {
+    display: flex;
+    align-items: center;
+}
+
+.now-playing .additional-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.now-playing .additional-controls button img {
+    width: 20px;
+    height: 20px;
+}
+
+.now-playing .additional-controls input[type="range"] {
+    width: 100px;
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
