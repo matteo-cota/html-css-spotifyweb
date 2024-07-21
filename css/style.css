@@ -6,17 +6,23 @@ body {
     color: #fff;
     background-color: #121212;
     display: flex;
-    width: 1200;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Sidebar styles */
 .sidebar {
-    width: 250px;
+    width: 165px;
     background-color: #000;
-    padding: 20px;
+    padding: 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .sidebar .logo img {
@@ -37,7 +43,12 @@ body {
     color: #fff;
     display: flex;
     align-items: center;
-    width: 35px;
+    width: 25px;
+    font-size: 0.8em;
+}
+
+h2 {
+    font-size: 1em;
 }
 
 .sidebar nav ul li a img:active {
@@ -50,7 +61,7 @@ body {
 .sidebar .profile a {
     color: #fff;
     text-decoration: none;
-    margin: 20px 0;
+    margin: 0 0;
     display: flex;
     align-items: center;
 }
@@ -58,6 +69,7 @@ body {
 .sidebar .playlist ul {
     list-style: none;
     padding: 0;
+    font-size: 0.8em;
 }
 
 .sidebar .playlist ul li a {
@@ -76,5 +88,112 @@ body {
 }
 
 .playlist {
-    margin-bottom: 116px;
+    margin-bottom: 30px;
+}
+
+.most {
+    margin: 5px;
+    background-color: gray;
+    border: none;
+}
+
+/* Main content styles */
+main {
+    padding: 17px;
+    margin: -37px;
+}
+
+.main-header {
+    width: 100%;
+    margin: 20px;
+    height: 27px;
+    padding: 29px;
+    background-color: #0f0a11;
+}
+
+.upgrade-btn {
+    background-color: black;
+    border: white;
+    padding: 12px 32px;
+    border-radius: 24px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 17px;
+    left: 1157px;
+}
+
+.played {
+    margin-left: 234px;
+}
+
+.main-bar nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-bar nav ul li {
+    margin-right: 20px;
+}
+
+.main-bar nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.main-bar {
+    border: none;
+    padding: 10px 246px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.card {
+    width: 150px;
+    margin: 10px;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.subtitle {
+    color: #b3b3b3;
+}
+
+.created-for-you {
+    margin-left: 234px;
+    width: 400px;
+}
+
+.popular-artists {
+    margin-left: 234px;
+    width: 400px;
+    border-radius: 50px;
+}
+
+.circular {
+    border-radius: 100px;
 }
