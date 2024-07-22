@@ -1,6 +1,119 @@
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
-    .card {
-        width: calc(50% - 20px);
+/* General responsive styles */
+@media screen and (max-width: 1200px) {
+    .main-header nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-header nav ul li {
+        flex: 1 0 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-header nav ul li {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    .main-header .upgrade-btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .cards .card {
+        flex: 1 0 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .sidebar .logo img {
+        width: 40px;
+        height: auto;
+    }
+
+    .sidebar .nav-links a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar .nav-links img {
+        margin-bottom: 5px;
+    }
+
+    .sidebar .playlist ul li a {
+        font-size: 12px;
+    }
+
+    .main-header nav ul li {
+        flex: 1 0 48%;
+        margin-bottom: 10px;
+    }
+
+    .main-header .upgrade-btn {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .cards .card {
+        flex: 1 0 48%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+        padding: 5px;
+    }
+
+    .sidebar .logo img {
+        width: 30px;
+        height: auto;
+    }
+
+    .sidebar .nav-links img {
+        width: 20px;
+        height: auto;
+    }
+
+    .main-header nav ul li {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    .main-header .upgrade-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cards .card {
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .now-playing {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .now-playing .track-info,
+    .now-playing .player-controls,
+    .now-playing .progress-bar,
+    .now-playing .additional-controls {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .now-playing .progress-bar input {
+        width: 80%;
     }
 }
