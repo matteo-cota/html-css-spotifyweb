@@ -211,11 +211,10 @@ section h2 {
 
 /* Styles for the active links */
 nav ul li.active a {
-    color: #ffffff;
     position: relative;
 }
 
-nav ul li.active a:hover::before {
+nav ul li.active a:active::after {
     content: '';
     display: block;
     width: 100%;
@@ -226,15 +225,14 @@ nav ul li.active a:hover::before {
     left: 0;
 }
 
-.sidebar nav ul:hover:before {
+.sidebar nav ul:active::after {
     content: '';
     display: block;
-    width: 20%;
-    height: 2px;
-    background-color: #1DB954;
+    height: 27px;
+    border-left: 3px solid #1DB954;
     position: absolute;
-    bottom: 400px;
-    right: 150px;
+    left: 15px;
+    top: 78px;
 
 }
 

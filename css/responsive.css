@@ -29,7 +29,8 @@
 
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 60px;
+        width: 100px;
+        height: 82.2%;
         padding: 10px;
     }
 
@@ -49,6 +50,7 @@
 
     .sidebar .playlist ul li a {
         font-size: 12px;
+        margin: -1px;
     }
 
     .main-header nav ul li {
@@ -57,15 +59,18 @@
     }
 
     .main-header .upgrade-btn {
-        width: 90%;
+        width: 5%;
         margin: 10px auto;
     }
 
     .cards .card {
-        flex: 1 0 48%;
+        flex: 1 0 2%;
         margin-bottom: 10px;
     }
+
 }
+
+
 
 @media screen and (max-width: 600px) {
     .sidebar {
@@ -79,12 +84,17 @@
     }
 
     .sidebar .nav-links img {
-        width: 20px;
+        width: 2px;
         height: auto;
     }
 
+    .sidebar .playlist ul li a {
+        font-size: 8px;
+        margin: 0px;
+    }
+
     .main-header nav ul li {
-        flex: 1 0 100%;
+        flex: 1 0 10%;
         text-align: center;
     }
 
@@ -94,8 +104,8 @@
     }
 
     .cards .card {
-        flex: 1 0 100%;
-        margin-bottom: 10px;
+        flex: 1 0 1%;
+        margin-bottom: 1px;
     }
 
     .now-playing {
